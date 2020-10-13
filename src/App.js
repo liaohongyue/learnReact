@@ -8,24 +8,25 @@ import ContextTest from './Component/ContextTest';
 import Hoc from './Component/Hoc';
 import HookTest from './Component/HookTest';
 import RexduxTest from './Component/ReduxTest';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 import store from './store'
 import RouteSample from './Component/RouteSample';
+import G2plotTest from './Component/G2plotTest';
 
 function App() {
   return (
     <div className="">
-            <Provider store={store} >
+      <G2plotTest />
+      {/* <AntdTest></AntdTest> */}
+      {/* <Provider store={store} >
         <RouteSample></RouteSample>
-      <RexduxTest></RexduxTest>
+        <RexduxTest></RexduxTest>
       </Provider>
       <ContextTest></ContextTest>
       <HookTest></HookTest>
       <WelcomeDialog></WelcomeDialog>
-      test
-      <AntdTest></AntdTest>
       <CommentList></CommentList>
-      <Hoc></Hoc>
+      <Hoc></Hoc> */}
     </div>
   );
 }
